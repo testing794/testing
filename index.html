@@ -1441,7 +1441,7 @@ market_overview: {
           worldCopyJump: false,
           attributionControl: false,
           zoomControl: false
-        }).setView([40, 65], 2);
+        }).setView([40, 25], 2);
 
         L.control.zoom({position: 'topleft'}).addTo(this.map);
       }
@@ -2041,7 +2041,7 @@ resetView() {
         }
 
         // Reset map view
-        this.map.setView([40, 65], 2);
+        this.map.setView([40, 25], 2);
         this.hideCountryBubble();
         
         // Force redraw the map with normal colors
@@ -2213,7 +2213,7 @@ this.state.set('similarity.active', true);
 
 this.closeSimilarityModal();
 this.elements.countryBubble.style.display = 'none';
-this.map.setView([40, 65], 2);
+this.map.setView([40, 25], 2);
 this.drawSimilarityMap();
       }
 
